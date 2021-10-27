@@ -6,7 +6,7 @@
 /*   By: gtaggana <gtaggana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 18:54:39 by gtaggana          #+#    #+#             */
-/*   Updated: 2021/10/27 22:02:45 by gtaggana         ###   ########.fr       */
+/*   Updated: 2021/10/27 22:14:20 by gtaggana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ char	*ft_strjoin(char *s1, char *s2)
 	if (!(s1 && s2))
 		return (NULL);
 	join = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if(!join)
-		return(NULL);
+	if (!join)
+		return (NULL);
 	i = -1;
 	while (s1[++i])
 		join[i] = s1[i];
@@ -75,7 +75,7 @@ char	*ft_get2n(char *balance_line)
 		i++;
 	line = (char *)malloc(sizeof(char) * i + 2);
 	if (!line)
-		return(NULL);
+		return (NULL);
 	i = 0;
 	while (balance_line[i] && balance_line[i] != '\n')
 	{
